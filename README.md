@@ -1,2 +1,2 @@
 # Text-to-Speech
-Web Speech API enables you to incorporate voice data
+Небольшой проект написанный с использованием Web Speech API для преобразования текста в голос 

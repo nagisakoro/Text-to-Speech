@@ -1,0 +1,60 @@
+<html lang="eng">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Конвертировать текст в речь</title>
+  </head>
+  <body class="contrainer bg-light">
+    <div class="card">
+      <h2>Конвертируем текст в речь</h2>
+      <h5>Прослушивайте ваш текст</h5>
+      <p class="lead_head">Выберите голос</p>
+
+      <select class="form-select" id="voices"></select>
+
+      <div class="flex">
+        <div>
+          <p class="lead">Громкость</p>
+          <input
+            type="range"
+            min="0"
+            max="1"
+            value="1"
+            step="0.1"
+            id="volume"
+          />
+          <span id="volume-label" class="v2">1</span>
+        </div>
+        <div>
+          <p class="lead">Скорость</p>
+          <input type="range" min="0" max="1" value="1" step="0.1" id="rate" />
+          <span id="rate-label" class="v2">1</span>
+        </div>
+        <div>
+          <p class="lead">Тональность</p>
+          <input type="range" min="0" max="1" value="1" step="0.1" id="pitch" />
+          <span id="pitch-label" class="v2">1</span>
+        </div>
+      </div>
+
+      <textarea
+        class="textbody"
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Напишите что-нибудь здесь..."
+      ></textarea>
+
+      <div class="control_buttons">
+        <button id="start" class="btn btn-success">Старт</button>
+        <button id="start" class="btn btn-pause">Пауза</button>
+        <button id="start" class="btn btn-pesume">Продолжить</button>
+        <button id="start" class="btn btn-stop">Выключить</button>
+      </div>
+    </div>
+  </body>
+  <script src="./text-to-speech.js"></script>
+</html>
